@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO OTIMIZADO PRO GOOGLE ADS -->
+<title>Convite Digital de Casamento | Site Animado e PDF Personalizado - A partir de R$ 69,90</title>
+<meta name="description" content="Convite digital de casamento personalizado e animado. Site exclusivo dos noivos com RSVP por R$ 200 ou convite em PDF para WhatsApp por R$ 69,90. Entrega em 48h.">
+<meta name="keywords" content="convite digital casamento, convite de casamento digital, convite casamento whatsapp, site convite casamento, convite digital noivos, convite animado casamento">
+
+<meta property="og:title" content="Convite Digital de Casamento - Site Animado e PDF">
+<meta property="og:description" content="Convites digitais de casamento exclusivos. Site dos noivos com RSVP por R$ 200 ou PDF para WhatsApp por R$ 69,90.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://convitedigitaldeluxo-byte.github.io/landing-page/n3.png">
+
+<link rel="canonical" href="https://convitedigitaldeluxo.com/casamento">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Convite Digital de Casamento",
+  "description": "Convite digital personalizado para casamento em formato site animado ou PDF",
+  "brand": { "@type": "Brand", "name": "Convite Digital de Luxo" },
+  "offers": [
+    { "@type": "Offer", "name": "Convite Casamento PDF", "price": "69.90", "priceCurrency": "BRL" },
+    { "@type": "Offer", "name": "Site de Convite de Casamento", "price": "200.00", "priceCurrency": "BRL" }
+  ],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "3" }
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --gold: #C9A96E;
+    --gold-light: #E8D5B0;
+    --cream: #FAF7F2;
+    --dark: #1A1612;
+    --dark2: #2C2420;
+    --dark3: #221C18;
+    --green: #25D366;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--dark);
+    color: var(--cream);
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+    line-height: 1.6;
+  }
+
+  /* ── TOP NAV ── */
+  .topnav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+    padding: 16px 24px;
+    background: rgba(26,22,18,0.85);
+    backdrop-filter: blur(10px);
+    display: flex; justify-content: space-between; align-items: center;
+    border-bottom: 1px solid rgba(201,169,110,0.1);
+  }
+  .topnav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px; color: var(--gold); font-style: italic; letter-spacing: 1px;
+  }
+  .topnav-btn {
+    background: var(--gold); color: var(--dark); text-decoration: none;
+    padding: 10px 22px; font-size: 11px; letter-spacing: 2px;
+    text-transform: uppercase; font-weight: 500; transition: all 0.3s;
+  }
+  .topnav-btn:hover { background: var(--cream); }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center; padding: 100px 24px 60px;
+    position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 0%, rgba(201,169,110,0.20) 0%, transparent 70%),
+      radial-gradient(ellipse 60% 40% at 20% 100%, rgba(201,169,110,0.08) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .ornament { font-size: 22px; color: var(--gold); opacity: 0.6; margin: 8px 0; }
+  .hero-tag {
+    font-size: 11px; letter-spacing: 4px; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 24px;
+    opacity: 0; animation: fadeUp 1s 0.4s forwards;
+  }
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(38px, 8vw, 76px); font-weight: 300;
+    line-height: 1.05; letter-spacing: -1px;
+    color: var(--cream); margin-bottom: 24px; max-width: 900px;
+    opacity: 0; animation: fadeUp 1s 0.6s forwards;
+  }
+  .hero h1 em { font-style: italic; color: var(--gold); }
+  .hero-desc {
+    max-width: 540px; font-size: 16px; line-height: 1.8;
+    color: rgba(250,247,242,0.7); margin-bottom: 28px;
+    opacity: 0; animation: fadeUp 1s 0.8s forwards;
+  }
+  .hero-preco {
+    font-family: 'Cormorant Garamond', serif; font-style: italic;
+    font-size: 22px; color: var(--gold-light); margin-bottom: 36px;
+    opacity: 0; animation: fadeUp 1s 1s forwards;
+  }
+  .hero-preco strong { font-weight: 500; color: var(--gold); font-style: normal; }
+  .hero-btns {
+    display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;
+    opacity: 0; animation: fadeUp 1s 1.2s forwards;
+  }
+  .btn-primary, .btn-secondary {
+    display: inline-flex; align-items: center; gap: 10px; text-decoration: none;
+    font-size: 12px; font-weight: 500; letter-spacing: 2px;
+    text-transform: uppercase; padding: 18px 32px; transition: all 0.3s;
+  }
+  .btn-primary { background: var(--gold); color: var(--dark); }
+  .btn-primary:hover {
+    background: var(--cream); transform: translateY(-2px);
+    box-shadow: 0 20px 40px rgba(201,169,110,0.3);
+  }
+  .btn-secondary { background: transparent; color: var(--cream); border: 1px solid var(--gold); }
+  .btn-secondary:hover { background: rgba(201,169,110,0.1); }
+
+  /* ── SEÇÕES ── */
+  .section-tag {
+    display: inline-block; font-size: 11px; letter-spacing: 4px;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 16px;
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(34px, 6vw, 52px); font-weight: 300;
+    line-height: 1.1; margin-bottom: 16px;
+  }
+  .section-title em { font-style: italic; color: var(--gold); }
+  .section-sub {
+    max-width: 560px; margin: 0 auto 60px;
+    color: rgba(250,247,242,0.65); font-size: 16px;
+  }
+
+  /* ── GALERIA ── */
+  .galeria { padding: 100px 24px; background: var(--dark); text-align: center; }
+  .galeria-grid {
+    max-width: 1200px; margin: 60px auto 0;
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;
+  }
+  @media (min-width: 900px) { .galeria-grid { grid-template-columns: repeat(4, 1fr); } }
+  .galeria-item {
+    position: relative; overflow: hidden; aspect-ratio: 9/16; cursor: pointer;
+    border: 1px solid rgba(201,169,110,0.15); transition: all 0.4s;
+  }
+  .galeria-item:hover { border-color: var(--gold); transform: translateY(-4px); }
+  .galeria-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s; }
+  .galeria-item:hover img { transform: scale(1.05); }
+  .galeria-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 50%, rgba(26,22,18,0.85) 100%);
+    display: flex; align-items: flex-end; padding: 20px;
+    opacity: 0; transition: opacity 0.4s;
+  }
+  .galeria-item:hover .galeria-overlay { opacity: 1; }
+  .galeria-overlay span {
+    font-family: 'Cormorant Garamond', serif; font-style: italic;
+    color: var(--gold); font-size: 16px;
+  }
+
+  /* ── PRODUTOS ── */
+  .produtos { padding: 100px 24px; background: var(--dark2); position: relative; }
+  .produtos::before {
+    content: '🕯️'; position: absolute; top: 40px; left: 50%;
+    transform: translateX(-50%); font-size: 22px; opacity: 0.5;
+  }
+  .produtos-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
+  .produtos-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 50px;
+  }
+  @media (max-width: 768px) { .produtos-grid { grid-template-columns: 1fr; } }
+  .produto-card {
+    background: var(--dark); border: 1px solid rgba(201,169,110,0.2);
+    padding: 48px 36px; text-align: left; position: relative;
+    transition: all 0.4s; display: flex; flex-direction: column;
+  }
+  .produto-card:hover { transform: translateY(-4px); }
+  .produto-card.destaque {
+    border: 1px solid var(--gold);
+    background: linear-gradient(180deg, var(--dark3) 0%, var(--dark) 100%);
+    box-shadow: 0 20px 60px rgba(201,169,110,0.15);
+  }
+  .produto-badge {
+    position: absolute; top: -12px; right: 24px;
+    background: var(--gold); color: var(--dark); font-size: 10px;
+    letter-spacing: 2px; text-transform: uppercase; padding: 6px 14px; font-weight: 500;
+  }
+  .produto-tipo {
+    font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 12px;
+  }
+  .produto-nome {
+    font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 400;
+    color: var(--cream); margin-bottom: 8px; line-height: 1.2;
+  }
+  .produto-nome em { font-style: italic; color: var(--gold); }
+  .produto-desc {
+    color: rgba(250,247,242,0.55); font-size: 14px;
+    margin-bottom: 28px; line-height: 1.7;
+  }
+  .produto-preco {
+    margin-bottom: 28px; padding-bottom: 24px;
+    border-bottom: 1px solid rgba(201,169,110,0.15);
+  }
+  .preco-prefix {
+    display: block; font-size: 11px; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 4px;
+  }
+  .preco-valor {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px; font-weight: 400; color: var(--cream); letter-spacing: -1px;
+  }
+  .preco-valor span { font-size: 24px; color: var(--gold-light); }
+  .produto-features { list-style: none; margin-bottom: 32px; flex: 1; }
+  .produto-features li {
+    padding: 10px 0; font-size: 14px; color: rgba(250,247,242,0.78);
+    display: flex; align-items: flex-start; gap: 12px;
+    border-bottom: 1px solid rgba(201,169,110,0.08);
+  }
+  .produto-features li:last-child { border: none; }
+  .produto-features li::before {
+    content: '◆'; color: var(--gold); font-size: 10px;
+    margin-top: 6px; flex-shrink: 0;
+  }
+  .btn-produto {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    width: 100%; padding: 18px; text-decoration: none;
+    font-size: 12px; font-weight: 500; letter-spacing: 2px;
+    text-transform: uppercase; transition: all 0.3s;
+    border: 1px solid var(--gold); color: var(--gold); background: transparent;
+  }
+  .btn-produto:hover { background: var(--gold); color: var(--dark); }
+  .produto-card.destaque .btn-produto { background: var(--gold); color: var(--dark); }
+  .produto-card.destaque .btn-produto:hover { background: var(--cream); border-color: var(--cream); }
+
+  /* ── PROCESSO ── */
+  .processo { padding: 100px 24px; background: var(--dark); text-align: center; }
+  .processo-inner { max-width: 1000px; margin: 0 auto; }
+  .processo-steps {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 60px;
+  }
+  @media (max-width: 768px) { .processo-steps { grid-template-columns: repeat(2, 1fr); } }
+  .step {
+    padding: 32px 16px; border-top: 1px solid rgba(201,169,110,0.2); text-align: left;
+  }
+  .step-num {
+    font-family: 'Cormorant Garamond', serif; font-size: 48px;
+    color: var(--gold); font-weight: 300; font-style: italic;
+    margin-bottom: 12px; line-height: 1;
+  }
+  .step h3 {
+    font-family: 'Cormorant Garamond', serif; font-size: 22px;
+    color: var(--cream); margin-bottom: 8px; font-weight: 400;
+  }
+  .step p { font-size: 14px; color: rgba(250,247,242,0.55); line-height: 1.7; }
+
+  /* ── DIFERENCIAIS ── */
+  .diferenciais { padding: 100px 24px; background: var(--dark2); text-align: center; position: relative; }
+  .diferenciais::before {
+    content: '🌿'; position: absolute; top: 40px; left: 50%;
+    transform: translateX(-50%); font-size: 22px; opacity: 0.5;
+  }
+  .dif-grid {
+    max-width: 1100px; margin: 60px auto 0;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+  }
+  @media (max-width: 768px) { .dif-grid { grid-template-columns: 1fr; } }
+  .dif-card {
+    padding: 40px 28px; text-align: left; background: var(--dark);
+    border-left: 2px solid var(--gold);
+  }
+  .dif-icon { font-size: 28px; margin-bottom: 20px; display: block; }
+  .dif-card h3 {
+    font-family: 'Cormorant Garamond', serif; font-size: 22px;
+    color: var(--cream); margin-bottom: 12px; font-weight: 400;
+  }
+  .dif-card p { font-size: 14px; color: rgba(250,247,242,0.6); line-height: 1.7; }
+
+  /* ── DEPOIMENTOS ── */
+  .depoimentos { padding: 100px 24px; background: var(--dark); text-align: center; position: relative; }
+  .depoimentos::before {
+    content: '❀'; position: absolute; top: 40px; left: 50%;
+    transform: translateX(-50%); font-size: 22px; color: var(--gold); opacity: 0.5;
+  }
+  .dep-grid {
+    max-width: 1100px; margin: 60px auto 0;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+  }
+  @media (max-width: 768px) { .dep-grid { grid-template-columns: 1fr; } }
+  .dep-card {
+    padding: 40px 32px; background: var(--dark2);
+    border-top: 2px solid var(--gold); text-align: left;
+  }
+  .dep-stars { color: var(--gold); letter-spacing: 2px; margin-bottom: 20px; font-size: 14px; }
+  .dep-texto {
+    font-family: 'Cormorant Garamond', serif; font-style: italic;
+    font-size: 18px; color: var(--cream); line-height: 1.6; margin-bottom: 24px;
+  }
+  .dep-autor { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); }
+
+  /* ── FAQ ── */
+  .faq { padding: 100px 24px; background: var(--dark2); }
+  .faq-inner { max-width: 800px; margin: 0 auto; text-align: center; }
+  .faq-list { margin-top: 60px; text-align: left; }
+  .faq-item {
+    border-bottom: 1px solid rgba(201,169,110,0.15);
+    padding: 28px 0; cursor: pointer;
+  }
+  .faq-pergunta {
+    display: flex; justify-content: space-between; align-items: center; gap: 16px;
+    font-family: 'Cormorant Garamond', serif; font-size: 22px;
+    color: var(--cream); font-weight: 400;
+  }
+  .faq-toggle { color: var(--gold); font-size: 24px; transition: transform 0.3s; flex-shrink: 0; }
+  .faq-item.aberto .faq-toggle { transform: rotate(45deg); }
+  .faq-resposta {
+    max-height: 0; overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    color: rgba(250,247,242,0.65); font-size: 15px; line-height: 1.8;
+  }
+  .faq-item.aberto .faq-resposta { max-height: 400px; padding-top: 16px; }
+
+  /* ── CTA FINAL ── */
+  .cta-final {
+    padding: 120px 24px; text-align: center;
+    background: linear-gradient(180deg, var(--dark) 0%, var(--dark2) 100%);
+    position: relative; overflow: hidden;
+  }
+  .cta-final::before {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(201,169,110,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .cta-ornament { font-size: 24px; color: var(--gold); margin-bottom: 24px; position: relative; }
+  .cta-final h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(34px, 6vw, 54px); font-weight: 300;
+    line-height: 1.1; margin-bottom: 20px; position: relative;
+  }
+  .cta-final h2 em { font-style: italic; color: var(--gold); }
+  .cta-final p {
+    max-width: 500px; margin: 0 auto 40px;
+    color: rgba(250,247,242,0.65); font-size: 16px;
+    line-height: 1.8; position: relative;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    padding: 40px 24px; text-align: center; background: var(--dark);
+    border-top: 1px solid rgba(201,169,110,0.1);
+    color: rgba(250,247,242,0.35); font-size: 12px; letter-spacing: 1px;
+  }
+  footer span { color: var(--gold); }
+
+  /* ── LIGHTBOX ── */
+  .lightbox {
+    display: none; position: fixed; inset: 0;
+    background: rgba(0,0,0,0.92); z-index: 200;
+    align-items: center; justify-content: center; padding: 20px;
+  }
+  .lightbox.open { display: flex; }
+  .lightbox img { max-width: 90%; max-height: 90vh; object-fit: contain; }
+  .lightbox-close {
+    position: absolute; top: 20px; right: 20px; background: none;
+    border: 1px solid var(--gold); color: var(--gold);
+    width: 44px; height: 44px; font-size: 24px; cursor: pointer;
+  }
+
+  /* ── WA FLOAT ── */
+  .float-wa {
+    position: fixed; bottom: 24px; right: 24px;
+    width: 56px; height: 56px; background: var(--green);
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    text-decoration: none; z-index: 100;
+    box-shadow: 0 8px 24px rgba(37,211,102,0.4);
+    animation: floatPulse 2s infinite;
+  }
+
+  @keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+    from { opacity: 0; transform: translateY(20px); }
+  }
+  @keyframes floatPulse {
+    0%, 100% { box-shadow: 0 8px 24px rgba(37,211,102,0.4); }
+    50% { box-shadow: 0 8px 40px rgba(37,211,102,0.7); }
+  }
+  .reveal {
+    opacity: 0; transform: translateY(32px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav class="topnav">
+  <span class="topnav-logo">Convite Digital de Luxo</span>
+  <a class="topnav-btn" href="https://wa.me/5511968512828?text=Ol%C3%A1!%20Quero%20fazer%20um%20convite%20digital%20de%20casamento.">Pedir agora</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="ornament">✿</div>
+  <p class="hero-tag">💍 Convite Digital de Casamento</p>
+  <h1>Convite de Casamento que <em>encanta</em><br>antes da festa começar</h1>
+  <p class="hero-desc">Convites de casamento digitais e personalizados para os noivos que querem encantar seus convidados desde o primeiro toque. Escolha o site exclusivo dos noivos ou o convite em PDF para WhatsApp.</p>
+  <p class="hero-preco">a partir de <strong>R$ 69,90</strong></p>
+  <div class="hero-btns">
+    <a class="btn-primary" href="https://wa.me/5511968512828?text=Ol%C3%A1!%20Quero%20fazer%20um%20convite%20digital%20de%20casamento.">
+      <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      Quero meu convite
+    </a>
+    <a class="btn-secondary" href="#modelos">Ver modelos ↓</a>
+  </div>
+  <div class="ornament" style="margin-top:32px;">✿</div>
+</section>
+
+<!-- GALERIA -->
+<section class="galeria" id="modelos">
+  <span class="section-tag">Convites de casamento</span>
+  <h2 class="section-title">Casamentos que já<br><em>celebramos</em></h2>
+  <p class="section-sub">Cada convite de casamento é criado sob medida para o casal — com o estilo, as cores e a história de vocês.</p>
+  <div class="galeria-grid">
+    <div class="galeria-item" onclick="openLightbox('https://convitedigitaldeluxo-byte.github.io/landing-page/n1.png')">
+      <img src="https://convitedigitaldeluxo-byte.github.io/landing-page/n1.png" alt="Convite digital de casamento Helena e Thiago" loading="lazy">
+      <div class="galeria-overlay"><span>Helena & Thiago</span></div>
+    </div>
+    <div class="galeria-item" onclick="openLightbox('https://convitedigitaldeluxo-byte.github.io/landing-page/n3.png')">
+      <img src="https://convitedigitaldeluxo-byte.github.io/landing-page/n3.png" alt="Convite digital de casamento Alice e Bruno" loading="lazy">
+      <div class="galeria-overlay"><span>Alice & Bruno</span></div>
+    </div>
+    <div class="galeria-item" onclick="openLightbox('https://convitedigitaldeluxo-byte.github.io/landing-page/n5.png')">
+      <img src="https://convitedigitaldeluxo-byte.github.io/landing-page/n5.png" alt="Convite digital de casamento Helena e Thiago romântico" loading="lazy">
+      <div class="galeria-overlay"><span>Helena & Thiago</span></div>
+    </div>
+    <div class="galeria-item" onclick="openLightbox('https://convitedigitaldeluxo-byte.github.io/landing-page/n6.png')">
+      <img src="https://convitedigitaldeluxo-byte.github.io/landing-page/n6.png" alt="Convite digital de casamento Pedro e Lara" loading="lazy">
+      <div class="galeria-overlay"><span>Pedro & Lara</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUTOS -->
+<section class="produtos">
+  <div class="produtos-inner">
+    <span class="section-tag">Escolha seu convite</span>
+    <h2 class="section-title">Duas formas de<br><em>encantar</em></h2>
+    <p class="section-sub">Para todos os estilos de casamento — do mais íntimo ao mais sofisticado. Você escolhe o formato que combina com o seu grande dia.</p>
+    <div class="produtos-grid">
+
+      <div class="produto-card reveal">
+        <span class="produto-tipo">Versão Essencial</span>
+        <h3 class="produto-nome">Convite de Casamento<br>em <em>PDF</em></h3>
+        <p class="produto-desc">Ideal para enviar pelo WhatsApp e redes sociais de forma rápida e elegante.</p>
+        <div class="produto-preco">
+          <span class="preco-prefix">A partir de</span>
+          <div class="preco-valor">R$ <span>69,90</span></div>
+        </div>
+        <ul class="produto-features">
+          <li>Arquivo em PDF de alta qualidade</li>
+          <li>Design 100% personalizado para o casal</li>
+          <li>Nome dos noivos, data, horário e local</li>
+          <li>Fácil de compartilhar no WhatsApp</li>
+          <li>Inclui 2 revisões gratuitas</li>
+          <li>Entrega digital em até 48h</li>
+        </ul>
+        <a class="btn-produto" href="https://wa.me/5511968512828?text=Ol%C3%A1!%20Quero%20o%20convite%20de%20casamento%20em%20PDF%20(R%24%2069%2C90).">
+          Quero o PDF
+        </a>
+      </div>
+
+      <div class="produto-card destaque reveal">
+        <span class="produto-badge">⭐ Mais pedido</span>
+        <span class="produto-tipo">Versão Premium</span>
+        <h3 class="produto-nome">Site de Convite<br>de <em>Casamento</em></h3>
+        <p class="produto-desc">Muito mais que um convite — uma experiência completa dos noivos, com música, fotos e RSVP em um único link.</p>
+        <div class="produto-preco">
+          <span class="preco-prefix">A partir de</span>
+          <div class="preco-valor">R$ <span>200,00</span></div>
+        </div>
+        <ul class="produto-features">
+          <li>Site exclusivo dos noivos com link próprio</li>
+          <li>Animações suaves e design sob medida</li>
+          <li>Música de fundo escolhida pelos noivos</li>
+          <li>Confirmação de presença (RSVP) online</li>
+          <li>Localização integrada ao Google Maps</li>
+          <li>Galeria de fotos do ensaio</li>
+          <li>Contagem regressiva para o grande dia</li>
+          <li>Inclui 3 revisões gratuitas</li>
+          <li>Entrega digital em até 48h</li>
+        </ul>
+        <a class="btn-produto" href="https://wa.me/5511968512828?text=Ol%C3%A1!%20Quero%20o%20site%20de%20convite%20de%20casamento%20(R%24%20200).">
+          Quero o Site
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROCESSO -->
+<section class="processo reveal">
+  <div class="processo-inner">
+    <span class="section-tag">Processo</span>
+    <h2 class="section-title">Como funciona seu<br><em>convite de casamento</em></h2>
+    <p class="section-sub">Simples, rápido e sem dor de cabeça. Em 4 passos seu convite de casamento está pronto pra encantar os convidados.</p>
+    <div class="processo-steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3>Conversamos</h3>
+        <p>Você chama no WhatsApp e me conta sobre o casamento — estilo, cores, data e o que sonha.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3>Criamos</h3>
+        <p>Em até 48h preparo a primeira versão do convite de casamento personalizada pra vocês.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3>Ajustamos</h3>
+        <p>Você revisa, sugere mudanças e ajustamos tudo até ficar do jeito que vocês sonharam.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <h3>Compartilham</h3>
+        <p>Recebem o convite de casamento pronto pra mandar pelo WhatsApp ou pelo link exclusivo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section class="diferenciais reveal">
+  <span class="section-tag">Por que escolher</span>
+  <h2 class="section-title">Feito para o<br><em>seu casamento</em></h2>
+  <div class="dif-grid">
+    <div class="dif-card">
+      <span class="dif-icon">💍</span>
+      <h3>Exclusivo dos noivos</h3>
+      <p>Cada convite de casamento é único — nada de template genérico. Tudo desenhado a partir da história e do estilo do casal.</p>
+    </div>
+    <div class="dif-card">
+      <span class="dif-icon">📱</span>
+      <h3>Praticidade total</h3>
+      <p>Sem impressão, sem entrega física. Compartilhe seu convite digital de casamento pelo WhatsApp em segundos com todos os convidados.</p>
+    </div>
+    <div class="dif-card">
+      <span class="dif-icon">✨</span>
+      <h3>Emoção desde o início</h3>
+      <p>Animações suaves, música escolhida pelos noivos e detalhes que transformam o convite numa experiência inesquecível.</p>
+    </div>
+    <div class="dif-card">
+      <span class="dif-icon">⚡</span>
+      <h3>Entrega rápida</h3>
+      <p>Em até 48 horas seu convite digital de casamento está pronto. Ideal pra quem precisa enviar o save the date com agilidade.</p>
+    </div>
+    <div class="dif-card">
+      <span class="dif-icon">🌱</span>
+      <h3>Sustentável</h3>
+      <p>Convite digital significa zero papel desperdiçado. Um casamento elegante que também respeita o planeta.</p>
+    </div>
+    <div class="dif-card">
+      <span class="dif-icon">💬</span>
+      <h3>Atendimento personalizado</h3>
+      <p>Você fala direto com quem cria o convite. Sem robô, sem fila — atenção dedicada do início ao envio final.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="depoimentos reveal">
+  <span class="section-tag">Depoimentos</span>
+  <h2 class="section-title">O que dizem<br><em>nossos clientes</em></h2>
+  <div class="dep-grid">
+    <div class="dep-card">
+      <div class="dep-stars">★★★★★</div>
+      <p class="dep-texto">"O convite ficou lindo demais! Todos os convidados adoraram, recebi muitos elogios."</p>
+      <p class="dep-autor">Ana Paula — Casamento</p>
+    </div>
+    <div class="dep-card">
+      <div class="dep-stars">★★★★★</div>
+      <p class="dep-texto">"Super rápido e o resultado foi incrível. O convite da minha filha ficou um sonho!"</p>
+      <p class="dep-autor">Carla — Aniversário</p>
+    </div>
+    <div class="dep-card">
+      <div class="dep-stars">★★★★★</div>
+      <p class="dep-texto">"Profissional, atenciosa e entrega no prazo. Recomendo muito!"</p>
+      <p class="dep-autor">Fernanda — Formatura</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="faq-inner">
+    <span class="section-tag">Dúvidas frequentes</span>
+    <h2 class="section-title">Perguntas dos<br><em>noivos</em></h2>
+    <div class="faq-list">
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-pergunta">
+          Qual a diferença entre o convite em PDF e o site de casamento?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-resposta">
+          O convite em PDF (R$ 69,90) é uma imagem/arquivo elegante que você manda pelo WhatsApp. Já o site de convite de casamento (R$ 200) é uma página web exclusiva dos noivos com animações, música, RSVP online, contagem regressiva e link próprio pra compartilhar com os convidados.
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-pergunta">
+          Em quanto tempo recebo meu convite digital?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-resposta">
+          A primeira versão fica pronta em até 48 horas após confirmação do pedido e envio das informações do casamento. Depois disso, fazemos os ajustes que forem necessários.
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-pergunta">
+          Quantas revisões posso fazer?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-resposta">
+          O convite em PDF inclui 2 revisões gratuitas. O site de convite de casamento inclui 3 revisões. Caso precise de mais ajustes, conversamos sem problema — o objetivo é deixar seu convite perfeito.
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-pergunta">
+          O site de convite tem confirmação de presença?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-resposta">
+          Sim! O site inclui RSVP online — os convidados confirmam presença direto pelo link, e você recebe a lista organizada. Muito mais prático do que ficar perguntando um por um.
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-pergunta">
+          Posso colocar foto do casal no convite?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-resposta">
+          Claro! Tanto no PDF quanto no site de casamento podemos incluir fotos dos noivos. Basta enviar as imagens em boa qualidade e cuidamos do resto.
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-pergunta">
+          Como compartilho o convite com os convidados?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-resposta">
+          O convite em PDF você manda direto pelo WhatsApp como arquivo ou imagem. O site de convite vem com um link exclusivo dos noivos — basta enviar o link pra qualquer pessoa, e ela abre o convite no celular.
+        </div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-pergunta">
+          Como faço o pagamento?
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-resposta">
+          Aceitamos PIX, cartão de crédito e boleto. Você chama no WhatsApp, conversamos sobre o convite e enviamos o link de pagamento de forma segura.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final reveal">
+  <div class="cta-ornament">💌</div>
+  <h2>Pronta para encantar<br>seus <em>convidados</em>?</h2>
+  <p>Chama no WhatsApp agora e receba seu convite de casamento em até 48h. Atendimento personalizado direto com quem cria.</p>
+  <a class="btn-primary" href="https://wa.me/5511968512828?text=Ol%C3%A1!%20Quero%20fazer%20um%20convite%20digital%20de%20casamento.">
+    <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    Falar no WhatsApp agora
+  </a>
+</section>
+
+<footer>
+  <p>© 2026 <span>Convite Digital de Luxo</span> · Convites digitais de casamento personalizados</p>
+</footer>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">×</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<a class="float-wa" href="https://wa.me/5511968512828?text=Ol%C3%A1!%20Quero%20fazer%20um%20convite%20digital%20de%20casamento." title="Falar no WhatsApp">
+  <svg width="26" height="26" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.15 });
+  reveals.forEach(r => observer.observe(r));
+
+  function openLightbox(src) {
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+  function toggleFaq(item) {
+    item.classList.toggle('aberto');
+  }
+</script>
+
+</body>
+</html>
